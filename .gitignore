@@ -179,3 +179,12 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# HACHI HIL TESTBED — IGNORE LARGE RAW SD BINARIES & SCRATCH BUFFERS; (Keep small hachi_mission_archive_XX.csv reports, ignore raw SD media)
+
+*.img
+VIRTUAL_SD_512MB.CSV
+VIRTUAL_SD_512MB - Copy.CSV
+*.hex
+*.elf
+*.bak

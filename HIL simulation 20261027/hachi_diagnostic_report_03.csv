@@ -1,0 +1,104 @@
+SimTime_ms,RPM,TPS_Pct,Raw_THW,Raw_VTA,TVIS,Fan,DTC,Ring_State,Test_Phase
+123023,3190,38,0,472,0,1,4,1,POST_EXTRACTION_RECOVERY
+123073,2938,33,0,438,0,1,4,1,POST_EXTRACTION_RECOVERY
+123123,2682,30,0,413,0,1,4,1,POST_EXTRACTION_RECOVERY
+123173,2551,27,0,387,0,1,4,1,POST_EXTRACTION_RECOVERY
+123223,2311,23,0,362,0,1,4,1,POST_EXTRACTION_RECOVERY
+123273,1948,19,0,326,0,1,4,1,POST_EXTRACTION_RECOVERY
+123323,1996,17,0,315,0,1,4,1,POST_EXTRACTION_RECOVERY
+123373,2097,17,0,312,0,1,4,1,POST_EXTRACTION_RECOVERY
+123423,2144,17,0,316,0,1,4,1,POST_EXTRACTION_RECOVERY
+123473,2196,19,0,327,0,1,4,1,POST_EXTRACTION_RECOVERY
+123523,2220,19,0,330,0,1,4,1,POST_EXTRACTION_RECOVERY
+123573,2266,19,0,328,0,1,4,1,POST_EXTRACTION_RECOVERY
+123623,2334,20,0,338,0,1,4,1,POST_EXTRACTION_RECOVERY
+123673,2384,21,0,344,0,1,4,1,POST_EXTRACTION_RECOVERY
+123723,2442,21,0,346,0,1,4,1,POST_EXTRACTION_RECOVERY
+123773,2492,23,0,358,0,1,4,1,POST_EXTRACTION_RECOVERY
+123823,2544,23,0,362,0,1,4,1,POST_EXTRACTION_RECOVERY
+123873,2593,24,0,364,0,1,4,1,POST_EXTRACTION_RECOVERY
+123923,2635,25,0,370,0,1,4,1,POST_EXTRACTION_RECOVERY
+123973,2699,26,0,379,0,1,4,1,POST_EXTRACTION_RECOVERY
+124023,2735,26,0,378,0,1,4,1,POST_EXTRACTION_RECOVERY
+124073,2789,27,0,391,0,1,4,1,POST_EXTRACTION_RECOVERY
+124123,2831,28,0,395,0,1,4,1,POST_EXTRACTION_RECOVERY
+124173,2880,28,0,398,0,1,4,1,POST_EXTRACTION_RECOVERY
+124223,2946,29,0,402,0,1,4,1,POST_EXTRACTION_RECOVERY
+124273,2984,30,0,415,0,1,4,1,POST_EXTRACTION_RECOVERY
+124323,3043,30,0,410,0,1,4,1,POST_EXTRACTION_RECOVERY
+124374,3086,32,0,424,0,1,4,1,POST_EXTRACTION_RECOVERY
+124450,3148,33,0,432,0,1,4,1,POST_EXTRACTION_RECOVERY
+124500,3191,33,0,432,0,1,4,1,POST_EXTRACTION_RECOVERY
+
+--- 30-SLOT ASYMMETRIC (20 PRE / 10 POST) EEPROM FIFO HISTORY (200ms/step = 6.0s Window) ---
+Sample_Idx,Rel_Time_Sec,Window_Phase,RPM,TPS_Pct,Raw_THW,Raw_VTA,TVIS,Fan,DTC
+-19,-3.8,PRE_TRIGGER,3892,44,642,517,0,0,0
+-18,-3.6,PRE_TRIGGER,4034,45,639,529,0,0,0
+-17,-3.4,PRE_TRIGGER,4261,49,636,554,0,0,0
+-16,-3.2,PRE_TRIGGER,4734,54,629,592,1,0,0
+-15,-3.0,PRE_TRIGGER,5514,65,626,678,1,0,0
+-14,-2.8,PRE_TRIGGER,6334,76,624,765,1,0,0
+-13,-2.6,PRE_TRIGGER,7142,89,620,858,1,0,0
+-12,-2.4,PRE_TRIGGER,7324,97,620,923,1,0,0
+-11,-2.2,PRE_TRIGGER,6432,85,618,829,1,0,0
+-10,-2.0,PRE_TRIGGER,5395,70,608,712,1,0,0
+-9,-1.8,PRE_TRIGGER,4416,55,607,603,1,0,0
+-8,-1.6,PRE_TRIGGER,3449,41,609,493,0,0,0
+-7,-1.4,PRE_TRIGGER,2446,26,606,380,0,0,0
+-6,-1.2,PRE_TRIGGER,2097,18,613,318,0,0,0
+-5,-1.0,PRE_TRIGGER,2288,20,611,334,0,0,0
+-4,-0.8,PRE_TRIGGER,2490,22,609,353,0,0,0
+-3,-0.6,PRE_TRIGGER,2689,25,607,371,0,0,0
+-2,-0.4,PRE_TRIGGER,2879,29,614,403,0,0,0
+-1,-0.2,PRE_TRIGGER,3086,32,608,424,0,0,0
+0,+0.0,TRIGGER_T0,3143,33,0,432,0,1,4
+1,+0.2,POST_TRIGGER,3340,35,0,447,0,1,4
+2,+0.4,POST_TRIGGER,3521,38,0,470,0,1,4
+3,+0.6,POST_TRIGGER,3711,41,0,497,0,1,4
+4,+0.8,POST_TRIGGER,3906,44,0,519,0,1,4
+5,+1.0,POST_TRIGGER,4118,47,0,540,0,1,4
+6,+1.2,POST_TRIGGER,4337,49,0,559,0,1,4
+7,+1.4,POST_TRIGGER,4770,55,0,600,1,1,4
+8,+1.6,POST_TRIGGER,5506,66,0,683,1,1,4
+9,+1.8,POST_TRIGGER,6334,77,0,767,1,1,4
+10,+2.0,POST_TRIGGER,7156,89,0,861,1,1,4
+
+--- PYTHON TERMINAL EXECUTION LOG & SCORECARD ---
+[HACHI DIAGNOSTICS] Connecting to ECU on COM3...
+[HACHI DIAGNOSTICS] Output Report: hachi_diagnostic_report_03.csv
+"
+[STEP 1] Interrogating EEPROM & Live ECU for Pre-Existing Field / SPST Faults..."
+======================================================================
+ [!] PRIORITY ALERT: REAL-WORLD FAULT RETRIEVED FROM EEPROM BLACK-BOX!
+======================================================================
+ - Diagnostic Mode                : FIELD FAULT EXTRACTION (No 'FFF' Injected)
+ - Stored Diagnostic Trouble Code : Code 4
+ - Engine Speed at Fault (t=0.0s) : 3143 RPM
+ - Sensor State at Fault (t=0.0s) : TPS=33% (RawVTA=432) | RawTHW=0 ADC
+ - All-Time Peak Engine Speed     : 7780 RPM
+ - Automated Root-Cause Analysis  : CODE 4 INSTANT SHORT-TO-GROUND (Raw THW dropped 608 -> 0 in 1 step: Manual SPST Switch!)
+ - Post-Trigger Failsafe Audit    : VERIFIED (10/10 Post-Trigger Slots [+0.2s..+2.0s] confirmed Fan Failsafe ON)
+ - Asymmetric 20/10 FIFO History  : 30/30 SAMPLES (20 Pre/Trig + 10 Post-Trigger)
+    [Sample] | Rel Time | Phase | Engine RPM | Throttle | Raw THW | Raw VTA | TVIS | Fan | DTC
+    ------------------------------------------------------------------------------------------
+      -6     |   -1.2s  | PRE   |  2097 RPM |    18%   |    613  |    318  |   0  |  0  |  0
+      -5     |   -1.0s  | PRE   |  2288 RPM |    20%   |    611  |    334  |   0  |  0  |  0
+      -4     |   -0.8s  | PRE   |  2490 RPM |    22%   |    609  |    353  |   0  |  0  |  0
+      -3     |   -0.6s  | PRE   |  2689 RPM |    25%   |    607  |    371  |   0  |  0  |  0
+      -2     |   -0.4s  | PRE   |  2879 RPM |    29%   |    614  |    403  |   0  |  0  |  0
+      -1     |   -0.2s  | PRE   |  3086 RPM |    32%   |    608  |    424  |   0  |  0  |  0
+      +0     |   +0.0s  | TRIG  |  3143 RPM |    33%   |      0  |    432  |   0  |  1  |  4
+      +1     |   +0.2s  | POST  |  3340 RPM |    35%   |      0  |    447  |   0  |  1  |  4
+      +2     |   +0.4s  | POST  |  3521 RPM |    38%   |      0  |    470  |   0  |  1  |  4
+      +3     |   +0.6s  | POST  |  3711 RPM |    41%   |      0  |    497  |   0  |  1  |  4
+      +4     |   +0.8s  | POST  |  3906 RPM |    44%   |      0  |    519  |   0  |  1  |  4
+      +5     |   +1.0s  | POST  |  4118 RPM |    47%   |      0  |    540  |   0  |  1  |  4
+      +6     |   +1.2s  | POST  |  4337 RPM |    49%   |      0  |    559  |   0  |  1  |  4
+      +7     |   +1.4s  | POST  |  4770 RPM |    55%   |      0  |    600  |   1  |  1  |  4
+      +8     |   +1.6s  | POST  |  5506 RPM |    66%   |      0  |    683  |   1  |  1  |  4
+      +9     |   +1.8s  | POST  |  6334 RPM |    77%   |      0  |    767  |   1  |  1  |  4
+     +10     |   +2.0s  | POST  |  7156 RPM |    89%   |      0  |    861  |   1  |  1  |  4
+"
+[STEP 2] Clearing Latched Code ('RRR') & Resetting EEPROM ('CCC') for Next Drive..."
+ - Live ECU Latch Reset & Armed   : STILL FAULTED (Check SPST Switch!)
+======================================================================

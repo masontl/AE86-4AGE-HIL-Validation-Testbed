@@ -1,0 +1,104 @@
+SimTime_ms,RPM,TPS_Pct,Raw_THW,Raw_VTA,TVIS,Fan,DTC,Ring_State,Test_Phase
+107490,3795,42,639,502,0,0,0,0,POST_EXTRACTION_RECOVERY
+107540,3830,42,632,503,0,0,0,0,POST_EXTRACTION_RECOVERY
+107590,3892,44,642,517,0,0,0,0,POST_EXTRACTION_RECOVERY
+107640,3906,43,635,513,0,0,0,0,POST_EXTRACTION_RECOVERY
+107691,3970,45,637,524,0,0,0,0,POST_EXTRACTION_RECOVERY
+107741,4034,45,639,529,0,0,0,0,POST_EXTRACTION_RECOVERY
+107791,4082,46,632,531,0,0,0,0,POST_EXTRACTION_RECOVERY
+107841,4120,48,642,545,0,0,0,0,POST_EXTRACTION_RECOVERY
+107918,4225,48,640,552,0,0,0,0,POST_EXTRACTION_RECOVERY
+107968,4261,49,636,554,0,0,0,0,POST_EXTRACTION_RECOVERY
+108018,4342,50,639,561,0,0,0,0,POST_EXTRACTION_RECOVERY
+108068,4357,50,632,562,0,0,0,0,POST_EXTRACTION_RECOVERY
+108118,4578,51,631,572,1,0,0,0,POST_EXTRACTION_RECOVERY
+108168,4734,54,629,592,1,0,0,0,POST_EXTRACTION_RECOVERY
+108218,4927,57,630,615,1,0,0,0,POST_EXTRACTION_RECOVERY
+108268,5122,60,626,636,1,0,0,0,POST_EXTRACTION_RECOVERY
+108318,5334,63,632,661,1,0,0,0,POST_EXTRACTION_RECOVERY
+108368,5514,65,626,678,1,0,0,0,POST_EXTRACTION_RECOVERY
+108418,5760,69,633,707,1,0,0,0,POST_EXTRACTION_RECOVERY
+108468,5961,71,629,727,1,0,0,0,POST_EXTRACTION_RECOVERY
+108518,6132,74,630,747,1,0,0,0,POST_EXTRACTION_RECOVERY
+108568,6334,76,624,765,1,0,0,0,POST_EXTRACTION_RECOVERY
+108618,6584,80,631,793,1,0,0,0,POST_EXTRACTION_RECOVERY
+108668,6666,83,621,813,1,0,0,0,POST_EXTRACTION_RECOVERY
+108718,6944,86,621,836,1,0,0,0,POST_EXTRACTION_RECOVERY
+108768,7142,89,620,858,1,0,0,0,POST_EXTRACTION_RECOVERY
+108818,7324,92,624,881,1,0,0,0,POST_EXTRACTION_RECOVERY
+108868,7530,95,617,902,1,0,0,0,POST_EXTRACTION_RECOVERY
+108918,7755,97,625,923,1,0,0,0,POST_EXTRACTION_RECOVERY
+108968,7324,97,620,923,1,0,0,0,POST_EXTRACTION_RECOVERY
+
+--- 30-SLOT ASYMMETRIC (20 PRE / 10 POST) EEPROM FIFO HISTORY (200ms/step = 6.0s Window) ---
+Sample_Idx,Rel_Time_Sec,Window_Phase,RPM,TPS_Pct,Raw_THW,Raw_VTA,TVIS,Fan,DTC
+-19,-3.8,PRE_TRIGGER,2248,19,0,331,0,1,4
+-18,-3.6,PRE_TRIGGER,2446,21,0,347,0,1,4
+-17,-3.4,PRE_TRIGGER,2637,25,0,371,0,1,4
+-16,-3.2,PRE_TRIGGER,2831,28,0,397,0,1,4
+-15,-3.0,PRE_TRIGGER,5626,74,584,748,1,0,0
+-14,-2.8,PRE_TRIGGER,4667,60,591,643,1,0,0
+-13,-2.6,PRE_TRIGGER,3930,46,589,531,0,0,0
+-12,-2.4,PRE_TRIGGER,2948,32,592,424,0,0,0
+-11,-2.2,PRE_TRIGGER,1946,18,594,318,0,0,0
+-10,-2.0,PRE_TRIGGER,2218,18,585,324,0,0,0
+-9,-1.8,PRE_TRIGGER,2386,21,581,346,0,0,0
+-8,-1.6,PRE_TRIGGER,2595,25,583,371,0,0,0
+-7,-1.4,PRE_TRIGGER,2794,27,577,388,0,0,0
+-6,-1.2,PRE_TRIGGER,2985,30,583,412,0,0,0
+-5,-1.0,PRE_TRIGGER,3234,34,579,439,0,0,0
+-4,-0.8,PRE_TRIGGER,3448,37,581,463,0,0,0
+-3,-0.6,PRE_TRIGGER,3621,40,584,487,0,0,0
+-2,-0.4,PRE_TRIGGER,3826,43,579,510,0,0,0
+-1,-0.2,PRE_TRIGGER,4032,45,569,525,0,0,0
+0,+0.0,TRIGGER_T0,4192,47,0,541,0,1,4
+1,+0.2,POST_TRIGGER,4352,51,0,572,0,1,4
+2,+0.4,POST_TRIGGER,5122,60,0,638,1,1,4
+3,+0.6,POST_TRIGGER,5961,72,0,729,1,1,4
+4,+0.8,POST_TRIGGER,6720,84,517,823,1,1,0
+5,+1.0,POST_TRIGGER,7522,95,585,908,1,1,0
+6,+1.2,POST_TRIGGER,6950,91,584,873,1,1,0
+7,+1.4,POST_TRIGGER,5910,76,586,762,1,1,0
+8,+1.6,POST_TRIGGER,4908,62,589,652,1,1,0
+9,+1.8,POST_TRIGGER,4192,50,589,563,0,1,0
+10,+2.0,POST_TRIGGER,3191,36,589,458,0,1,0
+
+--- PYTHON TERMINAL EXECUTION LOG & SCORECARD ---
+[HACHI DIAGNOSTICS] Connecting to ECU on COM3...
+[HACHI DIAGNOSTICS] Output Report: hachi_diagnostic_report_02.csv
+"
+[STEP 1] Interrogating EEPROM & Live ECU for Pre-Existing Field / SPST Faults..."
+======================================================================
+ [!] PRIORITY ALERT: REAL-WORLD FAULT RETRIEVED FROM EEPROM BLACK-BOX!
+======================================================================
+ - Diagnostic Mode                : FIELD FAULT EXTRACTION (No 'FFF' Injected)
+ - Stored Diagnostic Trouble Code : Code 4
+ - Engine Speed at Fault (t=0.0s) : 4192 RPM
+ - Sensor State at Fault (t=0.0s) : TPS=47% (RawVTA=541) | RawTHW=0 ADC
+ - All-Time Peak Engine Speed     : 7780 RPM
+ - Automated Root-Cause Analysis  : CODE 4 INSTANT SHORT-TO-GROUND (Raw THW dropped 569 -> 0 in 1 step: Manual SPST Switch!)
+ - Post-Trigger Failsafe Audit    : VERIFIED (10/10 Post-Trigger Slots [+0.2s..+2.0s] confirmed Fan Failsafe ON)
+ - Asymmetric 20/10 FIFO History  : 30/30 SAMPLES (20 Pre/Trig + 10 Post-Trigger)
+    [Sample] | Rel Time | Phase | Engine RPM | Throttle | Raw THW | Raw VTA | TVIS | Fan | DTC
+    ------------------------------------------------------------------------------------------
+      -6     |   -1.2s  | PRE   |  2985 RPM |    30%   |    583  |    412  |   0  |  0  |  0
+      -5     |   -1.0s  | PRE   |  3234 RPM |    34%   |    579  |    439  |   0  |  0  |  0
+      -4     |   -0.8s  | PRE   |  3448 RPM |    37%   |    581  |    463  |   0  |  0  |  0
+      -3     |   -0.6s  | PRE   |  3621 RPM |    40%   |    584  |    487  |   0  |  0  |  0
+      -2     |   -0.4s  | PRE   |  3826 RPM |    43%   |    579  |    510  |   0  |  0  |  0
+      -1     |   -0.2s  | PRE   |  4032 RPM |    45%   |    569  |    525  |   0  |  0  |  0
+      +0     |   +0.0s  | TRIG  |  4192 RPM |    47%   |      0  |    541  |   0  |  1  |  4
+      +1     |   +0.2s  | POST  |  4352 RPM |    51%   |      0  |    572  |   0  |  1  |  4
+      +2     |   +0.4s  | POST  |  5122 RPM |    60%   |      0  |    638  |   1  |  1  |  4
+      +3     |   +0.6s  | POST  |  5961 RPM |    72%   |      0  |    729  |   1  |  1  |  4
+      +4     |   +0.8s  | POST  |  6720 RPM |    84%   |    517  |    823  |   1  |  1  |  0
+      +5     |   +1.0s  | POST  |  7522 RPM |    95%   |    585  |    908  |   1  |  1  |  0
+      +6     |   +1.2s  | POST  |  6950 RPM |    91%   |    584  |    873  |   1  |  1  |  0
+      +7     |   +1.4s  | POST  |  5910 RPM |    76%   |    586  |    762  |   1  |  1  |  0
+      +8     |   +1.6s  | POST  |  4908 RPM |    62%   |    589  |    652  |   1  |  1  |  0
+      +9     |   +1.8s  | POST  |  4192 RPM |    50%   |    589  |    563  |   0  |  1  |  0
+     +10     |   +2.0s  | POST  |  3191 RPM |    36%   |    589  |    458  |   0  |  1  |  0
+"
+[STEP 2] Clearing Latched Code ('RRR') & Resetting EEPROM ('CCC') for Next Drive..."
+ - Live ECU Latch Reset & Armed   : VERIFIED [OK]
+======================================================================

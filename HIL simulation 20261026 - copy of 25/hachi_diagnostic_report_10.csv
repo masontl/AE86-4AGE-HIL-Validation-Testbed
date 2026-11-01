@@ -1,0 +1,98 @@
+SimTime_ms,RPM,TPS_Pct,Raw_THW,TVIS,Fan,DTC,Test_Phase
+454645,4789,63,663,1,0,0,POST_EXTRACTION_RECOVERY
+454695,4990,65,656,1,0,0,POST_EXTRACTION_RECOVERY
+454745,5193,68,658,1,0,0,POST_EXTRACTION_RECOVERY
+454795,5357,70,657,1,0,0,POST_EXTRACTION_RECOVERY
+454845,5592,73,661,1,0,0,POST_EXTRACTION_RECOVERY
+454895,5733,76,659,1,0,0,POST_EXTRACTION_RECOVERY
+454945,5942,78,664,1,0,0,POST_EXTRACTION_RECOVERY
+454995,6112,81,663,1,0,0,POST_EXTRACTION_RECOVERY
+455045,6382,83,659,1,0,0,POST_EXTRACTION_RECOVERY
+455095,6567,86,660,1,0,0,POST_EXTRACTION_RECOVERY
+455145,6781,88,659,1,0,0,POST_EXTRACTION_RECOVERY
+455195,6925,91,653,1,0,0,POST_EXTRACTION_RECOVERY
+455245,7129,93,655,1,0,0,POST_EXTRACTION_RECOVERY
+455296,7309,96,655,1,0,0,POST_EXTRACTION_RECOVERY
+455346,7500,42,658,1,0,0,POST_EXTRACTION_RECOVERY
+455396,7739,16,658,0,0,0,POST_EXTRACTION_RECOVERY
+455446,7396,6,656,0,0,0,POST_EXTRACTION_RECOVERY
+455496,7163,54,651,1,0,0,POST_EXTRACTION_RECOVERY
+455546,6925,80,653,1,0,0,POST_EXTRACTION_RECOVERY
+455596,6787,87,653,1,0,0,POST_EXTRACTION_RECOVERY
+455646,6504,87,647,1,0,0,POST_EXTRACTION_RECOVERY
+455696,6281,86,651,1,0,0,POST_EXTRACTION_RECOVERY
+455746,5976,83,650,1,0,0,POST_EXTRACTION_RECOVERY
+455796,5733,79,645,1,0,0,POST_EXTRACTION_RECOVERY
+455846,5514,77,653,1,0,0,POST_EXTRACTION_RECOVERY
+455896,5248,73,654,1,0,0,POST_EXTRACTION_RECOVERY
+455946,4990,70,643,1,0,0,POST_EXTRACTION_RECOVERY
+455996,4789,67,642,1,0,0,POST_EXTRACTION_RECOVERY
+456046,4545,64,643,1,0,0,POST_EXTRACTION_RECOVERY
+456096,4275,60,636,1,0,0,POST_EXTRACTION_RECOVERY
+
+--- 30-SLOT EEPROM PRE-TRIGGER FIFO HISTORY (200ms/step = 6.0s Window) ---
+Sample_Idx,Rel_Time_Sec,RPM,TPS_Pct,Raw_THW,TVIS,Fan,DTC
+-29,-5.8,3939,54,532,0,1,0
+-28,-5.6,4105,56,530,0,1,0
+-27,-5.4,4325,58,535,0,0,0
+-26,-5.2,4990,65,537,1,0,0
+-25,-5.0,5733,75,532,1,0,0
+-24,-4.8,6561,85,535,1,0,0
+-23,-4.6,7302,95,530,1,0,0
+-22,-4.4,7163,46,517,1,0,0
+-21,-4.2,6286,86,516,1,0,0
+-20,-4.0,5248,74,518,1,0,0
+-19,-3.8,4275,61,509,1,0,0
+-18,-3.6,3511,52,0,0,1,4
+-17,-3.4,3272,49,0,0,1,4
+-16,-3.2,2294,36,0,0,1,4
+-15,-3.0,1895,28,0,0,1,4
+-14,-2.8,2091,30,0,0,1,4
+-13,-2.6,2293,32,0,0,1,4
+-12,-2.4,2497,35,0,0,1,4
+-11,-2.2,2695,38,0,0,1,4
+-10,-2.0,2896,40,0,0,1,4
+-9,-1.8,3092,42,0,0,1,4
+-8,-1.6,3272,46,0,0,1,4
+-7,-1.4,3488,48,0,0,1,4
+-6,-1.2,3678,51,0,0,1,4
+-5,-1.0,3877,53,0,0,1,4
+-4,-0.8,4073,55,0,0,1,4
+-3,-0.6,4275,58,0,0,1,4
+-2,-0.4,4789,63,0,1,1,4
+-1,-0.2,6573,85,0,1,1,4
+0,0.0,6573,85,0,1,1,4
+
+--- PYTHON TERMINAL EXECUTION LOG & SCORECARD ---
+[HACHI DIAGNOSTICS] Connecting to ECU on COM3...
+[HACHI DIAGNOSTICS] Output Report: hachi_diagnostic_report_10.csv
+"
+[STEP 1] Interrogating EEPROM for Pre-Existing Field / Real-World Faults..."
+======================================================================
+ [!] PRIORITY ALERT: REAL-WORLD FAULT RETRIEVED FROM EEPROM BLACK-BOX!
+======================================================================
+ - Diagnostic Mode               : FIELD FAULT EXTRACTION (No 'FFF' Injected)
+ - Stored Diagnostic Trouble Code: Code 4
+ - Engine Speed at Fault Moment  : 6573 RPM
+ - Throttle Position at Fault    : 85%
+ - All-Time Peak Engine Speed    : 7755 RPM
+ - Automated Root-Cause Analysis : DECAYING SHORT-TO-GROUND (Raw THW=0 < 41 ADC)
+ - 30-Slot Pre-Fault FIFO History: 30/30 SAMPLES RETRIEVED
+    [Sample] | Rel Time | Engine RPM | Throttle | Raw THW | TVIS | Fan | DTC
+    ------------------------------------------------------------------------
+     -11     |   -2.2s  |  2695 RPM |    38%   |      0  |   0  |  1  |  4
+     -10     |   -2.0s  |  2896 RPM |    40%   |      0  |   0  |  1  |  4
+      -9     |   -1.8s  |  3092 RPM |    42%   |      0  |   0  |  1  |  4
+      -8     |   -1.6s  |  3272 RPM |    46%   |      0  |   0  |  1  |  4
+      -7     |   -1.4s  |  3488 RPM |    48%   |      0  |   0  |  1  |  4
+      -6     |   -1.2s  |  3678 RPM |    51%   |      0  |   0  |  1  |  4
+      -5     |   -1.0s  |  3877 RPM |    53%   |      0  |   0  |  1  |  4
+      -4     |   -0.8s  |  4073 RPM |    55%   |      0  |   0  |  1  |  4
+      -3     |   -0.6s  |  4275 RPM |    58%   |      0  |   0  |  1  |  4
+      -2     |   -0.4s  |  4789 RPM |    63%   |      0  |   1  |  1  |  4
+      -1     |   -0.2s  |  6573 RPM |    85%   |      0  |   1  |  1  |  4
+      +0     |   +0.0s  |  6573 RPM |    85%   |      0  |   1  |  1  |  4
+"
+[STEP 2] Clearing Latched Code ('RRR') & Resetting EEPROM ('CCC') for Next Drive..."
+ - Live ECU Latch Reset & Armed  : VERIFIED [OK]
+======================================================================

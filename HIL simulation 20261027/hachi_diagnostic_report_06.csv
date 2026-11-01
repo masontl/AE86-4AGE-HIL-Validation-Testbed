@@ -1,0 +1,104 @@
+SimTime_ms,RPM,TPS_Pct,Raw_THW,Raw_VTA,TVIS,Fan,DTC,Ring_State,Test_Phase
+5140,2680,25,610,377,0,0,0,0,POST_EXTRACTION_RECOVERY
+5190,2735,27,617,388,0,0,0,0,POST_EXTRACTION_RECOVERY
+5240,2794,27,610,386,0,0,0,0,POST_EXTRACTION_RECOVERY
+5291,2832,28,615,398,0,0,0,0,POST_EXTRACTION_RECOVERY
+5341,2879,28,613,399,0,0,0,0,POST_EXTRACTION_RECOVERY
+5391,2946,29,610,405,0,0,0,0,POST_EXTRACTION_RECOVERY
+5441,2983,31,617,416,0,0,0,0,POST_EXTRACTION_RECOVERY
+5491,3041,30,610,414,0,0,0,0,POST_EXTRACTION_RECOVERY
+5541,3086,32,616,427,0,0,0,0,POST_EXTRACTION_RECOVERY
+5591,3143,32,611,429,0,0,0,0,POST_EXTRACTION_RECOVERY
+5641,3191,33,611,435,0,0,0,0,POST_EXTRACTION_RECOVERY
+5691,3249,33,604,437,0,0,0,0,POST_EXTRACTION_RECOVERY
+5741,3283,35,614,449,0,0,0,0,POST_EXTRACTION_RECOVERY
+5791,3343,35,607,446,0,0,0,0,POST_EXTRACTION_RECOVERY
+5841,3392,36,610,457,0,0,0,0,POST_EXTRACTION_RECOVERY
+5891,3449,37,607,462,0,0,0,0,POST_EXTRACTION_RECOVERY
+5941,3461,38,612,470,0,0,0,0,POST_EXTRACTION_RECOVERY
+5991,3521,37,605,468,0,0,0,0,POST_EXTRACTION_RECOVERY
+6041,3583,39,613,482,0,0,0,0,POST_EXTRACTION_RECOVERY
+6091,3621,39,608,481,0,0,0,0,POST_EXTRACTION_RECOVERY
+6141,3667,40,608,490,0,0,0,0,POST_EXTRACTION_RECOVERY
+6191,3712,41,605,494,0,0,0,0,POST_EXTRACTION_RECOVERY
+6241,3778,42,613,504,0,0,0,0,POST_EXTRACTION_RECOVERY
+6291,3828,42,606,502,0,0,0,0,POST_EXTRACTION_RECOVERY
+6341,3892,43,611,514,0,0,0,0,POST_EXTRACTION_RECOVERY
+6391,3902,44,610,516,0,0,0,0,POST_EXTRACTION_RECOVERY
+6441,3966,44,606,521,0,0,0,0,POST_EXTRACTION_RECOVERY
+6491,4034,45,604,524,0,0,0,0,POST_EXTRACTION_RECOVERY
+6541,4084,47,614,540,0,0,0,0,POST_EXTRACTION_RECOVERY
+6591,4118,46,607,537,0,0,0,0,POST_EXTRACTION_RECOVERY
+
+--- 30-SLOT ASYMMETRIC (20 PRE / 10 POST) EEPROM FIFO HISTORY (200ms/step = 6.0s Window) ---
+Sample_Idx,Rel_Time_Sec,Window_Phase,RPM,TPS_Pct,Raw_THW,Raw_VTA,TVIS,Fan,DTC
+-19,-3.8,PRE_TRIGGER,0,0,0,0,0,0,0
+-18,-3.6,PRE_TRIGGER,0,0,0,0,0,0,0
+-17,-3.4,PRE_TRIGGER,0,0,0,0,0,0,0
+-16,-3.2,PRE_TRIGGER,0,0,0,0,0,0,0
+-15,-3.0,PRE_TRIGGER,0,0,0,0,0,0,0
+-14,-2.8,PRE_TRIGGER,0,0,0,0,0,0,0
+-13,-2.6,PRE_TRIGGER,0,0,0,0,0,0,0
+-12,-2.4,PRE_TRIGGER,0,0,0,0,0,0,0
+-11,-2.2,PRE_TRIGGER,0,0,0,0,0,0,0
+-10,-2.0,PRE_TRIGGER,0,0,0,0,0,0,0
+-9,-1.8,PRE_TRIGGER,0,0,0,0,0,0,0
+-8,-1.6,PRE_TRIGGER,0,0,0,0,0,0,0
+-7,-1.4,PRE_TRIGGER,0,0,0,0,0,0,0
+-6,-1.2,PRE_TRIGGER,0,0,0,0,0,0,0
+-5,-1.0,PRE_TRIGGER,0,0,0,0,0,0,0
+-4,-0.8,PRE_TRIGGER,0,0,0,0,0,0,0
+-3,-0.6,PRE_TRIGGER,0,0,0,0,0,0,0
+-2,-0.4,PRE_TRIGGER,0,0,0,0,0,0,0
+-1,-0.2,PRE_TRIGGER,0,0,0,0,0,0,0
+0,+0.0,TRIGGER_T0,1998,0,0,0,0,1,47
+1,+0.2,POST_TRIGGER,2194,18,520,317,0,1,0
+2,+0.4,POST_TRIGGER,2368,21,534,343,0,1,0
+3,+0.6,POST_TRIGGER,2595,24,540,369,0,1,0
+4,+0.8,POST_TRIGGER,2793,27,543,388,0,1,0
+5,+1.0,POST_TRIGGER,2983,30,546,408,0,1,0
+6,+1.2,POST_TRIGGER,3190,33,549,433,0,1,0
+7,+1.4,POST_TRIGGER,3392,36,561,457,0,1,0
+8,+1.6,POST_TRIGGER,3581,39,563,480,0,1,0
+9,+1.8,POST_TRIGGER,3799,41,560,494,0,1,0
+10,+2.0,POST_TRIGGER,3964,45,565,522,0,1,0
+
+--- PYTHON TERMINAL EXECUTION LOG & SCORECARD ---
+[HACHI DIAGNOSTICS] Connecting to ECU on COM3...
+[HACHI DIAGNOSTICS] Output Report: hachi_diagnostic_report_06.csv
+"
+[STEP 1] Interrogating EEPROM & Live ECU for Pre-Existing Field / SPST Faults..."
+======================================================================
+ [!] PRIORITY ALERT: REAL-WORLD FAULT RETRIEVED FROM EEPROM BLACK-BOX!
+======================================================================
+ - Diagnostic Mode                : FIELD FAULT EXTRACTION (No 'FFF' Injected)
+ - Stored Diagnostic Trouble Code : Code 47
+ - Engine Speed at Fault (t=0.0s) : 1998 RPM
+ - Sensor State at Fault (t=0.0s) : TPS=0% (RawVTA=0) | RawTHW=0 ADC
+ - All-Time Peak Engine Speed     : 3964 RPM
+ - Automated Root-Cause Analysis  : CODE 4 RC-DECAYING SHORT-TO-GROUND (Raw THW slewed 0 -> 0 < 41 ADC: 'FFF' / Sensor Wire Short) + CODE 7 TPS SHORT-TO-GROUND (Raw VTA slewed 0 -> 0 < 41 ADC)
+ - Post-Trigger Failsafe Audit    : VERIFIED (10/10 Post-Trigger Slots [+0.2s..+2.0s] confirmed Fan Failsafe ON)
+ - Asymmetric 20/10 FIFO History  : 30/30 SAMPLES (20 Pre/Trig + 10 Post-Trigger)
+    [Sample] | Rel Time | Phase | Engine RPM | Throttle | Raw THW | Raw VTA | TVIS | Fan | DTC
+    ------------------------------------------------------------------------------------------
+      -6     |   -1.2s  | PRE   |     0 RPM |     0%   |      0  |      0  |   0  |  0  |  0
+      -5     |   -1.0s  | PRE   |     0 RPM |     0%   |      0  |      0  |   0  |  0  |  0
+      -4     |   -0.8s  | PRE   |     0 RPM |     0%   |      0  |      0  |   0  |  0  |  0
+      -3     |   -0.6s  | PRE   |     0 RPM |     0%   |      0  |      0  |   0  |  0  |  0
+      -2     |   -0.4s  | PRE   |     0 RPM |     0%   |      0  |      0  |   0  |  0  |  0
+      -1     |   -0.2s  | PRE   |     0 RPM |     0%   |      0  |      0  |   0  |  0  |  0
+      +0     |   +0.0s  | TRIG  |  1998 RPM |     0%   |      0  |      0  |   0  |  1  |  47
+      +1     |   +0.2s  | POST  |  2194 RPM |    18%   |    520  |    317  |   0  |  1  |  0
+      +2     |   +0.4s  | POST  |  2368 RPM |    21%   |    534  |    343  |   0  |  1  |  0
+      +3     |   +0.6s  | POST  |  2595 RPM |    24%   |    540  |    369  |   0  |  1  |  0
+      +4     |   +0.8s  | POST  |  2793 RPM |    27%   |    543  |    388  |   0  |  1  |  0
+      +5     |   +1.0s  | POST  |  2983 RPM |    30%   |    546  |    408  |   0  |  1  |  0
+      +6     |   +1.2s  | POST  |  3190 RPM |    33%   |    549  |    433  |   0  |  1  |  0
+      +7     |   +1.4s  | POST  |  3392 RPM |    36%   |    561  |    457  |   0  |  1  |  0
+      +8     |   +1.6s  | POST  |  3581 RPM |    39%   |    563  |    480  |   0  |  1  |  0
+      +9     |   +1.8s  | POST  |  3799 RPM |    41%   |    560  |    494  |   0  |  1  |  0
+     +10     |   +2.0s  | POST  |  3964 RPM |    45%   |    565  |    522  |   0  |  1  |  0
+"
+[STEP 2] Clearing Latched Code ('RRR') & Resetting EEPROM ('CCC') for Next Drive..."
+ - Live ECU Latch Reset & Armed   : VERIFIED [OK]
+======================================================================
