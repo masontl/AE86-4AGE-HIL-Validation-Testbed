@@ -183,8 +183,8 @@ cython_debug/
 # HACHI HIL TESTBED — IGNORE LARGE RAW SD BINARIES & SCRATCH BUFFERS; (Keep small hachi_mission_archive_XX.csv reports, ignore raw SD media)
 
 *.img
-VIRTUAL_SD_512MB.CSV
-VIRTUAL_SD_512MB - Copy.CSV
+VIRTUAL_SD_*.CSV
+*.local.md
 *.hex
 *.elf
 *.bak
