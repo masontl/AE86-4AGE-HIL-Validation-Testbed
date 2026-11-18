@@ -1,0 +1,335 @@
+<circuit version="2.0.0-" rev="260501" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="20000000" animate="0" anicurr="0" ansi="0" width="3200" height="2400" >
+
+<item itemtype="Led" CircId="Led-26" mainComp="false" Show_id="false" Show_Val="false" Pos="908,708" rotation="0" hflip="1" vflip="1" label="Led-26" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="FreqMeter" CircId="FreqMeter-50" mainComp="false" Show_id="false" Show_Val="false" Pos="1496,40" rotation="0" hflip="1" vflip="1" label="FreqMeter-50" idLabPos="-32,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Filter="1 V" />
+
+<item itemtype="Capacitor" CircId="Capacitor-111" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="960,608" rotation="0" hflip="1" vflip="1" label="Capacitor-111" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1e-06 Ω" InitVolt="0 V" />
+
+<item itemtype="Led" CircId="Led-261" mainComp="false" Show_id="false" Show_Val="false" Pos="872,700" rotation="0" hflip="1" vflip="1" label="Led-261" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Blue" Grounded="false" Threshold="3.6 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Switch" CircId="Switch-275" mainComp="false" Show_id="false" Show_Val="false" Pos="1088,572" rotation="0" hflip="1" vflip="1" label="Switch-275" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" Checked="false" />
+
+<item itemtype="Diode" CircId="Diode-438" mainComp="false" Show_id="false" Show_Val="false" Pos="848,252" rotation="270" hflip="1" vflip="1" label="Diode-438" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Aip31068_i2c" CircId="Aip31068_i2c-470" mainComp="false" Show_id="false" Show_Val="false" Pos="1060,332" rotation="0" hflip="1" vflip="1" label="Aip31068_i2c-470" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="4" Cols="20" Control_Code="39" Frequency="100 _kHz" />
+
+<item itemtype="SerialTerm" CircId="SerialTerm-486" mainComp="false" Show_id="false" Show_Val="false" Pos="724,360" rotation="0" hflip="1" vflip="1" label="SerialTerm-486" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Baudrate="115200 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
+<item itemtype="SdCard" CircId="SdCard-485" mainComp="false" Show_id="false" Show_Val="false" Pos="1200,356" rotation="0" hflip="1" vflip="1" label="SdCard-485" idLabPos="-10,-30" labelrot="0" valLabPos="-16,20" valLabRot="0" File="hachi_sd_fat16.img" />
+
+<item itemtype="Voltimeter" CircId="Voltimeter-498" mainComp="false" Show_id="true" Show_Val="false" Pos="1516,100" rotation="0" hflip="-1" vflip="1" label="Throttle" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltimeter" CircId="Voltimeter-499" mainComp="false" Show_id="true" Show_Val="false" Pos="1516,164" rotation="0" hflip="-1" vflip="1" label="Shift" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltimeter" CircId="Voltimeter-501" mainComp="false" Show_id="true" Show_Val="false" Pos="1516,288" rotation="0" hflip="-1" vflip="1" label="Voltimeter-501" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltimeter" CircId="Voltimeter-500" mainComp="false" Show_id="true" Show_Val="false" Pos="1516,224" rotation="0" hflip="-1" vflip="1" label="Narrow o2" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Rail" CircId="Rail-90" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="836,60" rotation="0" hflip="1" vflip="1" label="Rail-90" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" />
+
+<item itemtype="BJT" CircId="BJT-88" mainComp="false" Show_id="false" Show_Val="false" Pos="920,176" rotation="0" hflip="1" vflip="1" label="BJT-88" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
+
+<item itemtype="AudioOut" CircId="AudioOut-54" mainComp="false" Show_id="false" Show_Val="false" Pos="944,236" rotation="0" hflip="1" vflip="1" label="AudioOut-54" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="false" Impedance="8 Ω" Frequency="1 kHz" />
+
+<item itemtype="SerialPort" CircId="SerialPort-467" mainComp="false" Show_id="false" Show_Val="false" Pos="664,308" rotation="-90" hflip="-1" vflip="1" label="SerialPort-467" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Auto="true" Port="COM4" Baudrate="115200 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
+<item itemtype="Bus" CircId="Bus-509" mainComp="false" Show_id="false" Show_Val="false" Pos="232,480" rotation="180" hflip="1" vflip="1" label="Bus-509" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="8 _bits" Start_Bit="0" />
+
+<item itemtype="ResistorDip" CircId="ResistorDip-511" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="976,724" rotation="0" hflip="1" vflip="1" label="LED" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" Resistance="220 Ω" Size="6" PullUp="false" PuVolt="5 V" />
+
+<item itemtype="ResistorDip" CircId="ResistorDip-510" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="896,632" rotation="0" hflip="1" vflip="1" label="RC Filter" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" Resistance="4.7 kΩ" Size="8" PullUp="false" PuVolt="5 V" />
+
+<item itemtype="Subcircuit" CircId="Nano-512" mainComp="false" Show_id="true" Show_Val="false" Pos="672,380" rotation="0" hflip="-1" vflip="1" label="Virtual 4A-GE" idLabPos="0.692734,-13.0727" labelrot="0" valLabPos="-16,20" valLabRot="0">
+<mainCompProps MainCompId="m328 TQFP-269" Frequency="16 MHz" ForceFreq="true" savePGM="false" Program="lesson14_MCU1_4A-GE_ECU.hex" Auto_Load="true" saveEepr="true" MainMcu="false" eeprom="12,148,98,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,167,2,12,148,138,0,12,148,23,3,12,148,241,2,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,12,148,138,0,0,0,0,0,36,0,39,0,42,0,0,0,0,0,37,0,40,0,43,0,0,0,0,0,35,0,38,0,41,0,4,4,4,4,4,4,4,4,2,2,2,2,2,2,3,3,3,3,3,3,1,2,4,8,16,32,64,128,1,2,4,8,16,32,1,2,4,8,16,32,0,0,0,8,0,2,1,0,0,3,4,7,0,0,0,0,0,0,0,0,212,7,17,36,31,190,207,239,216,224,222,191,205,191,17,224,160,224,177,224,228,229,245,225,2,192,5,144,13,146,170,49,177,7,217,247,33,224,170,225,177,224,1,192,29,146,169,61,178,7,225,247,16,224,194,230,208,224,4,192,33,151,254,1,14,148,162,10,193,54,209,7,201,247,14,148,73,3,12,148,168,10,12,148,0,0,131,48,129,240,40,244,129,48,153,240,130,48,169,240,8,149,135,48,169,240,136,48,201,240,132,48,177,244,128,145,128,0,143,125,3,192,128,145,128,0,143,119,128,147,128,0,8,149,132,181,143,119,132,189,8,149,132,181,143,125,251,207,128,145,176,0,143,119,128,147,176,0,8,149,128,145,176,0,143,125,249,207,207,147,223,147,40,47,48,224,249,1,226,85,255,79,132,145,249,1,230,86,255,79,212,145,249,1,234,87,255,79,196,145,204,35,161,240,129,17,14,148,140,0,236,47,240,224,238,15,255,31,228,88,255,79,165,145,180,145,236,145,237,35,129,224,144,224,9,244,128,224,223,145,207,145,8,149,128,224,144,224,250,207,31,147,207,147,223,147,40,47,48,224,249,1,226,85,255,79,132,145,249,1,230,86,255,79,212,145,249,1,234,87,255,79,196,145,204,35,169,240,22,47,129,17,14,148,140,0,236,47,240,224,238,15,255,31,238,88,255,79,165,145,180,145,143,183,248,148,236,145,17,17,8,192,208,149,222,35,220,147,143,191,223,145,207,145,31,145,8,149,222,43,248,207,207,147,223,147,144,224,252,1,230,86,255,79,36,145,138,87,159,79,252,1,132,145,136,35,209,240,144,224,136,15,153,31,252,1,232,89,255,79,165,145,180,145,252,1,238,88,255,79,197,145,212,145,97,17,14,192,159,183,248,148,140,145,226,47,224,149,142,35,140,147,40,129,226,35,232,131,159,191,223,145,207,145,8,149,143,183,248,148,236,145,226,43,236,147,143,191,246,207,31,147,207,147,223,147,24,47,235,1,97,224,14,148,12,1,32,151,57,244,96,224,129,47,223,145,207,145,31,145,12,148,222,0,207,63,209,5,17,244,97,224,245,207,225,47,240,224,226,85,255,79,228,145,227,48,49,241,64,244,225,48,177,240,226,48,225,240,192,56,209,5,124,247,228,207,231,48,41,241,232,48,89,241,228,48,177,247,128,145,128,0,128,98,128,147,128,0,208,147,139,0,192,147,138,0,4,192,132,181,128,104,132,189,199,189,223,145,207,145,31,145,8,149,132,181,128,98,132,189,200,189,247,207,128,145,128,0,128,104,128,147,128,0,208,147,137,0,192,147,136,0,237,207,128,145,176,0,128,104,128,147,176,0,192,147,179,0,229,207,128,145,176,0,128,98,128,147,176,0,192,147,180,0,221,207,175,146,191,146,207,146,223,146,239,146,255,146,15,147,31,147,207,147,223,147,108,1,123,1,139,1,4,15,21,31,235,1,94,1,174,24,191,8,192,23,209,7,89,240,105,145,214,1,237,145,252,145,1,144,240,129,224,45,198,1,9,149,137,43,121,247,197,1,223,145,207,145,31,145,15,145,255,144,239,144,223,144,207,144,191,144,175,144,8,149,252,1,83,141,68,141,37,47,48,224,132,47,144,224,130,27,147,11,84,23,16,240,207,150,8,149,1,151,8,149,252,1,145,141,130,141,152,23,97,240,162,141,174,15,191,47,177,29,93,150,140,145,146,141,159,95,159,115,146,143,144,224,8,149,143,239,159,239,8,149,252,1,145,141,130,141,152,23,49,240,130,141,232,15,241,29,133,141,144,224,8,149,143,239,159,239,8,149,252,1,145,141,34,141,137,47,144,224,128,92,159,79,130,27," SerialMon="-1" />
+</item>
+
+<item itemtype="Bus" CircId="Bus-519" mainComp="false" Show_id="false" Show_Val="false" Pos="688,500" rotation="0" hflip="1" vflip="1" label="Bus-519" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="8 _bits" Start_Bit="1" />
+
+<item itemtype="Bus" CircId="Bus-520" mainComp="false" Show_id="false" Show_Val="false" Pos="684,396" rotation="180" hflip="-1" vflip="1" label="Bus-520" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="2 _bits" Start_Bit="0" />
+
+<item itemtype="Bus" CircId="Bus-521" mainComp="false" Show_id="false" Show_Val="false" Pos="788,392" rotation="0" hflip="-1" vflip="1" label="Bus-521" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="2 _bits" Start_Bit="0" />
+
+<item itemtype="Bus" CircId="Bus-522" mainComp="false" Show_id="false" Show_Val="false" Pos="768,460" rotation="0" hflip="-1" vflip="1" label="Bus-522" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="8 _bits" Start_Bit="1" />
+
+<item itemtype="Ground" CircId="Ground-526" mainComp="false" Show_id="false" Show_Val="false" Pos="1008,608" rotation="-90" hflip="1" vflip="1" label="Ground-526" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-527" mainComp="false" Show_id="false" Show_Val="false" Pos="1032,616" rotation="-90" hflip="1" vflip="1" label="Ground-527" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Capacitor" CircId="Capacitor-528" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="984,616" rotation="0" hflip="1" vflip="1" label="Capacitor-528" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1e-06 Ω" InitVolt="0 V" />
+
+<item itemtype="Ground" CircId="Ground-529" mainComp="false" Show_id="false" Show_Val="false" Pos="1056,624" rotation="-90" hflip="1" vflip="1" label="Ground-529" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Capacitor" CircId="Capacitor-530" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="1008,624" rotation="0" hflip="1" vflip="1" label="Capacitor-530" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1e-06 Ω" InitVolt="0 V" />
+
+<item itemtype="Ground" CircId="Ground-531" mainComp="false" Show_id="false" Show_Val="false" Pos="1080,632" rotation="-90" hflip="1" vflip="1" label="Ground-531" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Capacitor" CircId="Capacitor-532" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="1032,632" rotation="0" hflip="1" vflip="1" label="Capacitor-532" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1e-06 Ω" InitVolt="0 V" />
+
+<item itemtype="Ground" CircId="Ground-533" mainComp="false" Show_id="false" Show_Val="false" Pos="1008,640" rotation="-90" hflip="1" vflip="1" label="Ground-533" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Capacitor" CircId="Capacitor-534" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="960,640" rotation="0" hflip="1" vflip="1" label="Capacitor-534" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1e-06 Ω" InitVolt="0 V" />
+
+<item itemtype="Ground" CircId="Ground-535" mainComp="false" Show_id="false" Show_Val="false" Pos="1032,648" rotation="-90" hflip="1" vflip="1" label="Ground-535" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Capacitor" CircId="Capacitor-536" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="984,648" rotation="0" hflip="1" vflip="1" label="Capacitor-536" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1e-06 Ω" InitVolt="0 V" />
+
+<item itemtype="Ground" CircId="Ground-537" mainComp="false" Show_id="false" Show_Val="false" Pos="1016,700" rotation="-90" hflip="1" vflip="1" label="Ground-537" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-538" mainComp="false" Show_id="false" Show_Val="false" Pos="1032,708" rotation="-90" hflip="1" vflip="1" label="Ground-538" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-539" mainComp="false" Show_id="false" Show_Val="false" Pos="1048,716" rotation="-90" hflip="1" vflip="1" label="Ground-539" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-540" mainComp="false" Show_id="false" Show_Val="false" Pos="1064,724" rotation="-90" hflip="1" vflip="1" label="Ground-540" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-541" mainComp="false" Show_id="false" Show_Val="false" Pos="1080,732" rotation="-90" hflip="1" vflip="1" label="Ground-541" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-542" mainComp="false" Show_id="false" Show_Val="false" Pos="1096,740" rotation="-90" hflip="1" vflip="1" label="Ground-542" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Bus" CircId="Bus-543" mainComp="false" Show_id="true" Show_Val="false" Pos="1000,452" rotation="0" hflip="1" vflip="1" label="Peripheral Bus" idLabPos="-21.8253,-90.7" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="10 _bits" Start_Bit="1" />
+
+<item itemtype="Bus" CircId="Bus-544" mainComp="false" Show_id="true" Show_Val="false" Pos="1148,396" rotation="90" hflip="-1" vflip="1" label="Bus-544" idLabPos="-21.8253,-90.7" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="10 _bits" Start_Bit="1" />
+
+<item itemtype="Bus" CircId="Bus-545" mainComp="false" Show_id="true" Show_Val="false" Pos="840,740" rotation="0" hflip="-1" vflip="1" label="Bus-545" idLabPos="3.13656,-31.4882" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="6 _bits" Start_Bit="1" />
+
+<item itemtype="Bus" CircId="Bus-546" mainComp="false" Show_id="true" Show_Val="false" Pos="860,664" rotation="0" hflip="-1" vflip="1" label="Bus-546" idLabPos="-29.7284,-70.5934" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="8 _bits" Start_Bit="0" />
+
+<item itemtype="Bus" CircId="Bus-547" mainComp="false" Show_id="true" Show_Val="false" Pos="768,500" rotation="0" hflip="-1" vflip="1" label="SD Card" idLabPos="-33.392,3.40887" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="4 _bits" Start_Bit="1" />
+
+<item itemtype="Bus" CircId="Bus-548" mainComp="false" Show_id="true" Show_Val="false" Pos="972,424" rotation="0" hflip="-1" vflip="1" label="Bus-548" idLabPos="-21.5763,-22.6879" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="4 _bits" Start_Bit="1" />
+
+<item itemtype="Subcircuit" CircId="Uno-25" mainComp="false" Show_id="true" Show_Val="false" Pos="800,368" rotation="0" hflip="1" vflip="1" label="Hachi MCU" idLabPos="67.8878,5.63109" labelrot="0" valLabPos="-16,20" valLabRot="0" Package="1- Board">
+<mainCompProps MainCompId="mega328-109" Package="1- mega328_DIP" Frequency="16 MHz" ForceFreq="true" savePGM="false" Program="lesson14_MCU2_interface_device.hex" Auto_Load="true" saveEepr="true" MainMcu="true" eeprom="12,148,166,0,12,148,127,20,12,148,88,20,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,14,20,12,148,206,0,12,148,204,20,12,148,166,20,12,148,206,0,12,148,206,0,12,148,206,0,12,148,206,0,12,148,254,20,12,148,206,0,124,60,62,94,43,61,63,47,91,93,59,44,42,34,92,0,83,105,109,84,105,109,101,95,109,115,44,82,80,77,44,84,80,83,95,80,99,116,44,82,97,119,95,84,72,87,44,67,111,111,108,97,110,116,95,70,44,84,86,73,83,44,70,97,110,44,76,105,118,101,95,68,84,67,44,76,97,116,99,104,101,100,95,68,84,67,44,79,88,95,109,86,44,86,70,95,109,86,44,70,117,101,108,95,84,114,105,109,95,80,99,116,44,76,111,111,112,95,67,76,44,73,71,102,95,79,75,0,0,0,0,0,35,0,38,0,41,0,36,84,69,76,69,77,44,0,0,0,0,0,36,0,39,0,42,0,0,0,0,0,37,0,40,0,43,0,4,4,4,4,4,4,4,4,2,2,2,2,2,2,3,3,3,3,3,3,1,2,4,8,16,32,64,128,1,2,4,8,16,32,1,2,4,8,16,32,0,0,0,8,0,2,1,0,0,3,4,7,0,0,0,0,0,0,0,0,29,22,17,36,31,190,207,239,216,224,222,191,205,191,18,224,160,224,177,224,238,227,242,228,2,192,5,144,13,146,168,62,177,7,217,247,38,224,168,238,178,224,1,192,29,146,163,63,178,7,225,247,16,224,198,234,208,224,4,192,33,151,254,1,14,148,214,31,197,58,209,7,201,247,14,148,143,22,12,148,29,33,12,148,0,0,131,48,129,240,40,244,129,48,153,240,130,48,169,240,8,149,135,48,169,240,136,48,201,240,132,48,177,244,128,145,128,0,143,125,3,192,128,145,128,0,143,119,128,147,128,0,8,149,132,181,143,119,132,189,8,149,132,181,143,125,251,207,128,145,176,0,143,119,128,147,176,0,8,149,128,145,176,0,143,125,249,207,31,147,207,147,223,147,40,47,48,224,249,1,234,92,254,79,132,145,249,1,238,93,254,79,212,145,249,1,226,95,254,79,196,145,204,35,169,240,22,47,129,17,14,148,208,0,236,47,240,224,238,15,255,31,236,95,254,79,165,145,180,145,143,183,248,148,236,145,17,17,8,192,208,149,222,35,220,147,143,191,223,145,207,145,31,145,8,149,222,43,248,207,207,147,223,147,144,224,252,1,238,93,254,79,36,145,130,95,158,79,252,1,132,145,136,35,209,240,144,224,136,15,153,31,252,1,230,80,255,79,165,145,180,145,252,1,236,95,254,79,197,145,212,145,98,48,113,244,159,183,248,148,60,145,130,47,128,149,131,35,140,147,232,129,46,43,40,131,159,191,223,145,207,145,8,149,143,183,248,148,236,145,46,43,44,147,143,191,246,207,142,80,128,100,128,147,124,0,128,145,122,0,128,100,128,147,122,0,128,145,122,0,134,253,252,207,128,145,120,0,144,145,121,0,8,149,63,183,248,148,128,145,206,3,144,145,207,3,160,145,208,3,176,145,209,3,38,181,168,155,5,192,47,63,25,240,1,150,161,29,177,29,63,191,186,47,169,47,152,47,136,39,188,1,205,1,98,15,113,29,129,29,145,29,66,224,102,15,119,31,136,31,153,31,74,149,209,247,8,149,47,183,248,148,96,145,202,3,112,145,203,3,128,145,204,3,144,145,205,3,47,191,8,149,207,146,223,146,239,146,255,146,15,147,31,147,14,148,106,1,0,145,232,2,16,145,233,2,32,145,234,2,48,145,235,2,107,1,124,1,192,26,209,10,226,10,243,10,151,1,134,1,0,147,188,3,16,147,189,3,32,147,190,3,48,147,191,3,96,147,232,2,112,147,233,2,128,147,234,2,144,147,235,2,128,145,186,3,144,145,187,3,1,150,144,147,187,3,128,147,186,3,31,145,15,145,255,144,239,144,223,144,207,144,8,149,128,145,184,3,144,145,185,3,1,150,144,147,185,3,128,147,184,3,8,149,8,149,8,149,8,149,220,1,237,145,252,145,1,144,240,129,224,45,9,148,239,146,255,146,15,147,31,147,207,147,223,147,140,1,123,1,208,224,192,224,247,1,236,15,253,31,100,145,102,35,97,240,216,1,237,145,252,145,1,144,240,129,224,45,200,1,9,149,137,43," SerialMon="-1" />
+</item>
+
+<item itemtype="Ground" CircId="Ground-555" mainComp="false" Show_id="false" Show_Val="false" Pos="1136,572" rotation="-90" hflip="1" vflip="1" label="Ground-555" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-557" mainComp="false" Show_id="false" Show_Val="false" Pos="928,276" rotation="0" hflip="1" vflip="1" label="Ground-557" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Bus" CircId="Bus-558" mainComp="false" Show_id="true" Show_Val="false" Pos="768,592" rotation="0" hflip="-1" vflip="1" label="LED Status" idLabPos="3.13656,-31.4882" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="6 _bits" Start_Bit="1" />
+
+<item itemtype="Bus" CircId="Bus-560" mainComp="false" Show_id="true" Show_Val="false" Pos="744,496" rotation="0" hflip="-1" vflip="1" label="Hi-Freq Digital" idLabPos="-3.10362,-72.2574" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="8 _bits" Start_Bit="0" />
+
+<item itemtype="Led" CircId="Led-564" mainComp="false" Show_id="false" Show_Val="false" Pos="940,716" rotation="0" hflip="1" vflip="1" label="Led-564" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="TextComponent" CircId="TextComponent-570" mainComp="false" Show_id="false" Show_Val="false" Pos="1016.42,425.913" rotation="0" hflip="1" vflip="1" label="TextComponent-570" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="consolas" Font_Color="#000080" Font_Size="6 _px" Fixed_Width="false" Text="MCU#2 Pin Allocations&#xa;&#xa;A0; Input:  Analog VTA throttle position&#xa;A1; Input:  Analog THW coolant temp&#xa;A2; Input:  Analog OX Narrowband O2 (0.0V - 1.0V)&#xa;A3; Input:  Analog VF TCCS Fuel Trim (0.0V - 5.0V)&#xa;&#xa;D7; Output: Driver Shift-Light / Acoustic Cue&#xa;D8; Output: T-VIS VSV Relay Status Indicator&#xa;D9; Output: Electric Radiator Fan Driver" />
+
+<item itemtype="TextComponent" CircId="TextComponent-571" mainComp="false" Show_id="false" Show_Val="false" Pos="378.349,543.342" rotation="0" hflip="1" vflip="1" label="TextComponent-571" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="consolas" Font_Color="#000080" Font_Size="6 _px" Fixed_Width="false" Text="MCU#1 Pin Allocations&#xa;&#xa;D4; Output: Simulated VAST Igniter IGf Spark Confirmation (D4 -&#x3E MCU#2 D3/INT1)&#xa;D5; Output: TCCS VF Fuel Trim Diagnostic Voltage (0-5V PWM -&#x3E MCU#2 A3)&#xa;D6; Output: Wideband's Emulated Narrowband OX (0-1V PWM -&#x3E MCU#2 A2)&#xa;D7; Input:  Closed-loop feedback from MCU #2 Radiator Fan (D9)&#xa;D8; Input:  Feedback from MCU #2 T-VIS solenoid (D8)&#xa;D9; Output: Simulated IG- tachometer pulse to MCU #2 (D2/INT0)&#xa;D10; Output: Simulated Throttle Position (PWM -&#x3E RC -&#x3E MCU#2 A0)&#xa;D11; Output: Simulated Coolant Temp (PWM -&#x3E RC -&#x3E MCU#2 A1)&#xa;&#xa;MCU#1 ASCII Commands on RX (115200 baud):&#xa;'C' &#x3D Trigger Cold-Start Reset (Drops Coolant to 70°F ambient)&#xa;'W' &#x3D Fast Warmup Jump (Sets Coolant to 165°F for immediate Closed-Loop testing!)&#xa;'S' &#x3D Inject Stuck-Open Thermostat (Soft Thermal Fault: Caps THW ~125°F &#x3C 140°F CL threshold!)&#xa;'V' &#x3D Inject Brake Booster Vacuum Leak (Soft Mechanical Fault: Low-Load Lean OX -&#x3E Max Rich VF in CL)&#xa;'I' &#x3D Inject VAST Igniter IGf Fault (Hard Code 14: Kills IGf pulses on D4 while IG- spins -&#x3E Fuel Cut!)&#xa;'F' &#x3D Inject THW Coolant Fault (Hard Code 4: 0V Short-to-Ground on D11)&#xa;'T' &#x3D Inject VTA TPS Fault     (Hard Code 7: 0V Short-to-Ground on D10)&#xa;'B' &#x3D Inject BOTH THW + VTA Hard Faults simultaneously&#xa;'N' &#x3D Restore Normal Operation on all sensors, igniter, thermostat & vacuum hose&#xa;'R' &#x3D Reset MCU#2 latched warnings, turn off PIN_FAN_OUTPUT, HIGH, set to Cold-Start Warmup phase" />
+
+<item itemtype="Node" CircId="Node-549" mainComp="false" Pos="664,404" />
+
+<item itemtype="Node" CircId="Node-554" mainComp="false" Pos="932,632" />
+
+<item itemtype="Node" CircId="Node-553" mainComp="false" Pos="940,624" />
+
+<item itemtype="Node" CircId="Node-552" mainComp="false" Pos="924,616" />
+
+<item itemtype="Node" CircId="Node-556" mainComp="false" Pos="932,572" />
+
+<item itemtype="Node" CircId="Node-559" mainComp="false" Pos="808,464" />
+
+<item itemtype="Node" CircId="Node-561" mainComp="false" Pos="916,608" />
+
+<item itemtype="Node" CircId="Node-563" mainComp="false" Pos="808,400" />
+
+<item itemtype="Node" CircId="Node-565" mainComp="false" Pos="808,456" />
+
+<item itemtype="Node" CircId="Node-569" mainComp="false" Pos="656,352" />
+
+<item itemtype="Connector" uid="connector-421" startpinid="Rail-90-outnod" endpinid="BJT-88-collector" pointList="852,60,928,60,928,160" />
+
+<item itemtype="Connector" uid="connector-422" startpinid="BJT-88-base" endpinid="Diode-438-rPin" pointList="904,176,848,176,848,236" />
+
+<item itemtype="Connector" uid="connector-391" startpinid="BJT-88-emiter" endpinid="AudioOut-54-lPin" pointList="928,192,928,228" />
+
+<item itemtype="Connector" uid="Connector-736" startpinid="Nano-512-4" endpinid="Bus-519-ePin1" pointList="664,444,680,444" />
+
+<item itemtype="Connector" uid="Connector-737" startpinid="Nano-512-5" endpinid="Bus-519-ePin2" pointList="664,452,680,452" />
+
+<item itemtype="Connector" uid="Connector-738" startpinid="Nano-512-6" endpinid="Bus-519-ePin3" pointList="664,460,680,460" />
+
+<item itemtype="Connector" uid="Connector-739" startpinid="Nano-512-7" endpinid="Bus-519-ePin4" pointList="664,468,680,468" />
+
+<item itemtype="Connector" uid="Connector-740" startpinid="Nano-512-8" endpinid="Bus-519-ePin5" pointList="664,476,680,476" />
+
+<item itemtype="Connector" uid="Connector-741" startpinid="Nano-512-9" endpinid="Bus-519-ePin6" pointList="664,484,680,484" />
+
+<item itemtype="Connector" uid="Connector-742" startpinid="Nano-512-10" endpinid="Bus-519-ePin7" pointList="664,492,680,492" />
+
+<item itemtype="Connector" uid="Connector-743" startpinid="Nano-512-11" endpinid="Bus-519-ePin8" pointList="664,500,680,500" />
+
+<item itemtype="Connector" uid="Connector-766" startpinid="Capacitor-111-rPin" endpinid="Ground-526-Gnd" pointList="976,608,992,608" />
+
+<item itemtype="Connector" uid="connector-767" startpinid="Capacitor-528-rPin" endpinid="Ground-527-Gnd" pointList="1000,616,1016,616" />
+
+<item itemtype="Connector" uid="connector-768" startpinid="Capacitor-530-rPin" endpinid="Ground-529-Gnd" pointList="1024,624,1040,624" />
+
+<item itemtype="Connector" uid="connector-769" startpinid="Capacitor-532-rPin" endpinid="Ground-531-Gnd" pointList="1048,632,1064,632" />
+
+<item itemtype="Connector" uid="connector-770" startpinid="Capacitor-534-rPin" endpinid="Ground-533-Gnd" pointList="976,640,992,640" />
+
+<item itemtype="Connector" uid="connector-771" startpinid="Capacitor-536-rPin" endpinid="Ground-535-Gnd" pointList="1000,648,1016,648" />
+
+<item itemtype="Connector" uid="Connector-777" startpinid="ResistorDip-511-resistor0-ePin1" endpinid="Ground-537-Gnd" pointList="992,700,1000,700" />
+
+<item itemtype="Connector" uid="Connector-778" startpinid="ResistorDip-511-resistor1-ePin3" endpinid="Ground-538-Gnd" pointList="992,708,1016,708" />
+
+<item itemtype="Connector" uid="Connector-785" startpinid="Aip31068_i2c-470PinSDA" endpinid="Bus-544-ePin1" pointList="1076,340,1076,388" />
+
+<item itemtype="Connector" uid="Connector-786" startpinid="Aip31068_i2c-470PinSCL" endpinid="Bus-544-ePin2" pointList="1084,340,1084,388" />
+
+<item itemtype="Connector" uid="Connector-787" startpinid="SdCard-485-PinCS" endpinid="Bus-544-ePin3" pointList="1168,348,1092,348,1092,388" />
+
+<item itemtype="Connector" uid="Connector-788" startpinid="SdCard-485-PinDI" endpinid="Bus-544-ePin4" pointList="1168,356,1100,356,1100,388" />
+
+<item itemtype="Connector" uid="Connector-789" startpinid="SdCard-485-PinCK" endpinid="Bus-544-ePin5" pointList="1168,364,1108,364,1108,388" />
+
+<item itemtype="Connector" uid="Connector-790" startpinid="SdCard-485-PinDO" endpinid="Bus-544-ePin6" pointList="1168,372,1116,372,1116,388" />
+
+<item itemtype="Connector" uid="Connector-791" startpinid="Bus-546-ePin1" endpinid="ResistorDip-510-resistor0-ePin0" pointList="868,608,880,608" />
+
+<item itemtype="Connector" uid="Connector-792" startpinid="Bus-546-ePin2" endpinid="ResistorDip-510-resistor1-ePin2" pointList="868,616,880,616" />
+
+<item itemtype="Connector" uid="Connector-793" startpinid="Bus-546-ePin3" endpinid="ResistorDip-510-resistor2-ePin4" pointList="868,624,880,624" />
+
+<item itemtype="Connector" uid="Connector-794" startpinid="Bus-546-ePin4" endpinid="ResistorDip-510-resistor3-ePin6" pointList="868,632,880,632" />
+
+<item itemtype="Connector" uid="Connector-795" startpinid="Bus-546-ePin5" endpinid="Bus-546-ePin5" pointList="868,640,880,640" />
+
+<item itemtype="Connector" uid="Connector-796" startpinid="Bus-546-ePin6" endpinid="ResistorDip-510-resistor5-ePin10" pointList="868,648,880,648" />
+
+<item itemtype="Connector" uid="Connector-797" startpinid="Bus-546-ePin7" endpinid="Bus-546-ePin7" pointList="868,656,880,656" />
+
+<item itemtype="Connector" uid="Connector-798" startpinid="Bus-546-ePin8" endpinid="ResistorDip-510-resistor7-ePin14" pointList="868,664,880,664" />
+
+<item itemtype="Connector" uid="Connector-802" startpinid="Bus-545-ePin4" endpinid="ResistorDip-511-resistor3-ePin6" pointList="848,724,960,724" />
+
+<item itemtype="Connector" uid="Connector-803" startpinid="Bus-545-ePin5" endpinid="ResistorDip-511-resistor4-ePin8" pointList="848,732,960,732" />
+
+<item itemtype="Connector" uid="Connector-804" startpinid="Bus-545-ePin6" endpinid="ResistorDip-511-resistor5-ePin10" pointList="848,740,960,740" />
+
+<item itemtype="Connector" uid="Connector-805" startpinid="Bus-520-busPinI" endpinid="Bus-521-busPinI" pointList="684,404,732,404,732,384,788,384" />
+
+<item itemtype="Connector" uid="Connector-806" startpinid="Bus-519-busPinI" endpinid="Bus-522-busPinI" pointList="688,444,688,416,740,416,740,404,768,404" />
+
+<item itemtype="Connector" uid="Connector-809" startpinid="Bus-543-busPinI" endpinid="Bus-544-busPinI" pointList="1000,380,1048,380,1048,416,1076,416,1076,396" />
+
+<item itemtype="Connector" uid="Connector-815" startpinid="Bus-548-ePin1" endpinid="Bus-543-ePin3" pointList="980,400,992,400,992,396" />
+
+<item itemtype="Connector" uid="Connector-816" startpinid="Bus-548-ePin2" endpinid="Bus-543-ePin4" pointList="980,408,992,408,992,404" />
+
+<item itemtype="Connector" uid="Connector-817" startpinid="Bus-548-ePin3" endpinid="Bus-543-ePin5" pointList="980,416,992,416,992,412" />
+
+<item itemtype="Connector" uid="Connector-818" startpinid="Bus-548-ePin4" endpinid="Bus-543-ePin6" pointList="980,424,992,424,992,420" />
+
+<item itemtype="Connector" uid="Connector-819" startpinid="Bus-548-ePin0" endpinid="Bus-547-ePin0" pointList="972,424,972,536,768,536,768,500" />
+
+<item itemtype="Connector" uid="Connector-821" startpinid="Nano-512-0" endpinid="Node-549-0" pointList="664,404,664,404" />
+
+<item itemtype="Connector" uid="Connector-822" startpinid="Node-549-2" endpinid="Bus-520-ePin1" pointList="664,404,676,404" />
+
+<item itemtype="Connector" uid="Connector-838" startpinid="Node-554-2" endpinid="Capacitor-532-lPin" pointList="932,632,1016,632" />
+
+<item itemtype="Connector" uid="Connector-837" startpinid="ResistorDip-510-resistor3-ePin7" endpinid="Node-554-0" pointList="912,632,932,632" />
+
+<item itemtype="Connector" uid="Connector-835" startpinid="Node-553-2" endpinid="Capacitor-530-lPin" pointList="940,624,992,624" />
+
+<item itemtype="Connector" uid="Connector-834" startpinid="ResistorDip-510-resistor2-ePin5" endpinid="Node-553-0" pointList="912,624,940,624" />
+
+<item itemtype="Connector" uid="Connector-833" startpinid="Uno-25-A0" endpinid="Node-553-1" pointList="952,424,940,424,940,624" />
+
+<item itemtype="Connector" uid="Connector-832" startpinid="Node-552-2" endpinid="Capacitor-528-lPin" pointList="924,616,968,616" />
+
+<item itemtype="Connector" uid="Connector-831" startpinid="ResistorDip-510-resistor1-ePin3" endpinid="Node-552-0" pointList="912,616,924,616" />
+
+<item itemtype="Connector" uid="Connector-830" startpinid="Uno-25-A2" endpinid="Node-552-1" pointList="952,408,924,408,924,616" />
+
+<item itemtype="Connector" uid="Connector-814" startpinid="Uno-25-13" endpinid="Bus-547-ePin3" pointList="808,496,776,496,776,492" />
+
+<item itemtype="Connector" uid="Connector-812" startpinid="Uno-25-12" endpinid="Bus-547-ePin4" pointList="808,488,796,488,796,500,776,500" />
+
+<item itemtype="Connector" uid="Connector-811" startpinid="Uno-25-11" endpinid="Bus-547-ePin2" pointList="808,480,776,480,776,484" />
+
+<item itemtype="Connector" uid="Connector-810" startpinid="Uno-25-10" endpinid="Bus-547-ePin1" pointList="808,472,776,472,776,476" />
+
+<item itemtype="Connector" uid="Connector-748" startpinid="Uno-25-3" endpinid="Bus-522-ePin1" pointList="808,408,776,408,776,404" />
+
+<item itemtype="Connector" uid="Connector-747" startpinid="Uno-25-1" endpinid="Bus-521-ePin2" pointList="808,392,796,392" />
+
+<item itemtype="Connector" uid="Connector-746" startpinid="Uno-25-0" endpinid="Bus-521-ePin1" pointList="808,384,796,384" />
+
+<item itemtype="Connector" uid="Connector-844" startpinid="Bus-545-ePin1" endpinid="Led-261-lPin" pointList="848,700,856,700" />
+
+<item itemtype="Connector" uid="Connector-845" startpinid="Led-261-rPin" endpinid="ResistorDip-511-resistor0-ePin0" pointList="888,700,960,700" />
+
+<item itemtype="Connector" uid="Connector-846" startpinid="Bus-545-ePin2" endpinid="Led-26-lPin" pointList="848,708,892,708" />
+
+<item itemtype="Connector" uid="Connector-847" startpinid="Led-26-rPin" endpinid="ResistorDip-511-resistor1-ePin2" pointList="924,708,960,708" />
+
+<item itemtype="Connector" uid="Connector-848" startpinid="Switch-275-switch0pinN" endpinid="Ground-555-Gnd" pointList="1104,572,1120,572" />
+
+<item itemtype="Connector" uid="Connector-849" startpinid="Switch-275-pinP0" endpinid="Node-556-1" pointList="1072,572,932,572" />
+
+<item itemtype="Connector" uid="Connector-850" startpinid="Uno-25-A1" endpinid="Node-556-0" pointList="952,416,932,416,932,572" />
+
+<item itemtype="Connector" uid="Connector-851" startpinid="Node-556-2" endpinid="Node-554-1" pointList="932,572,932,632" />
+
+<item itemtype="Connector" uid="Connector-852" startpinid="AudioOut-54-rPin" endpinid="Ground-557-Gnd" pointList="928,236,928,260" />
+
+<item itemtype="Connector" uid="Connector-855" startpinid="Bus-558-ePin1" endpinid="Uno-25-7" pointList="776,552,844,552,844,440,808,440" />
+
+<item itemtype="Connector" uid="Connector-856" startpinid="Bus-558-ePin2" endpinid="Node-559-1" pointList="776,560,836,560,836,464,808,464" />
+
+<item itemtype="Connector" uid="Connector-857" startpinid="Bus-522-ePin4" endpinid="Node-559-0" pointList="776,428,796,428,796,464,808,464" />
+
+<item itemtype="Connector" uid="Connector-858" startpinid="Node-559-2" endpinid="Uno-25-9" pointList="808,464,808,464" />
+
+<item itemtype="Connector" uid="Connector-859" startpinid="Bus-558-busPinI" endpinid="Bus-545-busPinI" pointList="768,552,724,552,724,700,840,700" />
+
+<item itemtype="Connector" uid="Connector-860" startpinid="Uno-25-A3" endpinid="Node-561-1" pointList="952,400,916,400,916,608" />
+
+<item itemtype="Connector" uid="Connector-861" startpinid="Capacitor-111-lPin" endpinid="Node-561-0" pointList="944,608,916,608" />
+
+<item itemtype="Connector" uid="Connector-862" startpinid="Node-561-2" endpinid="ResistorDip-510-resistor0-ePin1" pointList="916,608,912,608" />
+
+<item itemtype="Connector" uid="Connector-863" startpinid="Bus-522-ePin2" endpinid="Bus-560-ePin1" pointList="776,412,776,416,756,416,756,440,752,440" />
+
+<item itemtype="Connector" uid="Connector-864" startpinid="Bus-522-ePin3" endpinid="Bus-560-ePin2" pointList="776,420,776,424,760,424,760,448,752,448" />
+
+<item itemtype="Connector" uid="Connector-869" startpinid="Bus-560-ePin3" endpinid="Bus-522-ePin7" pointList="752,456,776,456,776,452" />
+
+<item itemtype="Connector" uid="Connector-870" startpinid="Bus-522-ePin8" endpinid="Bus-560-ePin4" pointList="776,460,776,464,752,464" />
+
+<item itemtype="Connector" uid="Connector-871" startpinid="Bus-560-busPinI" endpinid="Bus-546-busPinI" pointList="744,440,708,440,708,608,860,608" />
+
+<item itemtype="Connector" uid="Connector-872" startpinid="Diode-438-lPin" endpinid="Node-563-1" pointList="848,268,848,400,808,400" />
+
+<item itemtype="Connector" uid="Connector-873" startpinid="Bus-522-ePin6" endpinid="Node-563-0" pointList="776,444,788,444,788,400,808,400" />
+
+<item itemtype="Connector" uid="Connector-874" startpinid="Node-563-2" endpinid="Uno-25-2" pointList="808,400,808,400" />
+
+<item itemtype="Connector" uid="Connector-876" startpinid="Uno-25-A5" endpinid="Bus-543-ePin2" pointList="952,384,984,384,984,388,992,388" />
+
+<item itemtype="Connector" uid="Connector-877" startpinid="Uno-25-A4" endpinid="Bus-543-ePin1" pointList="952,392,972,392,972,380,992,380" />
+
+<item itemtype="Connector" uid="Connector-878" startpinid="Led-564-rPin" endpinid="ResistorDip-511-resistor2-ePin4" pointList="956,716,960,716" />
+
+<item itemtype="Connector" uid="Connector-879" startpinid="Bus-545-ePin3" endpinid="Led-564-lPin" pointList="848,716,924,716" />
+
+<item itemtype="Connector" uid="Connector-880" startpinid="Node-565-1" endpinid="Bus-558-ePin3" pointList="808,456,828,456,828,568,776,568" />
+
+<item itemtype="Connector" uid="Connector-881" startpinid="Bus-522-ePin5" endpinid="Node-565-0" pointList="776,436,792,436,792,456,808,456" />
+
+<item itemtype="Connector" uid="Connector-882" startpinid="Node-565-2" endpinid="Uno-25-8" pointList="808,456,808,456" />
+
+<item itemtype="Connector" uid="Connector-883" startpinid="ResistorDip-511-resistor2-ePin5" endpinid="Ground-539-Gnd" pointList="992,716,1032,716" />
+
+<item itemtype="Connector" uid="Connector-888" startpinid="SerialPort-467-pin0" endpinid="Bus-520-ePin2" pointList="672,348,672,396,676,396" />
+
+<item itemtype="Connector" uid="Connector-889" startpinid="SerialTerm-486-pin0" endpinid="Node-569-1" pointList="700,352,656,352" />
+
+<item itemtype="Connector" uid="Connector-890" startpinid="SerialPort-467-pin1" endpinid="Node-569-0" pointList="656,348,656,352" />
+
+<item itemtype="Connector" uid="Connector-891" startpinid="Node-569-2" endpinid="Node-549-1" pointList="656,352,656,404,664,404" />
+
+</circuit>
